@@ -18,9 +18,6 @@
  * @package WordPress
  */
 
-/**Disable Theme Editor */
-define( 'DISALLOW_FILE_EDIT', true );
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'local' );
@@ -68,7 +65,8 @@ $table_prefix = 'wp_';
 
 
 
-
+/**Disable Theme Editor */
+define( 'DISALLOW_FILE_EDIT', true );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
