@@ -13,10 +13,8 @@ function hobbyblogchild_wp_enqueue_scripts() {
     wp_enqueue_style( 
         'hobbyblogchild-style', 
         get_stylesheet_uri(),
-        array( 'parenthandle' ), 
+        array( 'twenty-twenty-one-style' ), 
         wp_get_theme()->get('Version') // this only works if you have Version in the style header
     );
 }
 add_action( 'wp_enqueue_scripts', 'hobbyblogchild_wp_enqueue_scripts' );
-
-?>
