@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+ * Template Name: About Template
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -9,8 +9,13 @@
  * @since Twenty Twenty-One 1.0
  */
 
-get_header();
+get_header(); ?>
 
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+
+
+<?php
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();
@@ -21,5 +26,9 @@ while ( have_posts() ) :
 		comments_template();
 	}
 endwhile; // End of the loop.
+?>
 
-get_footer();
+	</main>
+</div>
+
+<?php get_footer(); ?>
